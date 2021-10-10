@@ -1,6 +1,29 @@
 <html>
+<head>
+    <meta charset="utf-8">
+    <title>Admin</title>
+</head>
   <body>
-  <p1>Test</p1>
-  <p2>test2</p2>
-</body>
+
+	<link rel="stylesheet" href="style.css">
+	<center><h1>Buy Sell products</h1></center>
+		<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="view_products.php">view products</a>
+    </div>
+    <div class="row">
+        <div class="column">
+    	<form class="box" action = "addproduct.php" method="post">
+    	<h4>Add Product</h4>
+    		<label>Name:</label>
+    		<input type="text"  name="name_"><br><br>
+    		<label>Price:</label>
+    		<input type="text"  name="price_"><br><br>
+        <input type='file' name='image_' />
+    		<button>add new product</button>
+    </form>
+<?php
+include 'view_products.php';
+?>
+    </body>
 </html>
